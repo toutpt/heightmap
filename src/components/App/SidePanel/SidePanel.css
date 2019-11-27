@@ -1,0 +1,17 @@
+#side-panel {
+    background-color: #673ab8;
+    color: White;
+    font-size: 1.1rem;
+}
+#side-panel ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.side-panel-item {
+    max-width: 100%;
+	overflow-wrap: break-word;
+	background-color: transparent;
+	color: white;
+    border: 0;
+    cursor: pointer;
+}

@@ -1,0 +1,32 @@
+#app {
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "side-panel main right"
+    "footer footer footer";
+  grid-template-columns: 200px auto auto;
+  grid-template-rows: 2rem 100% auto;
+  grid-gap: 10px;
+  grid-auto-rows: minmax(20px, auto);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+
+#header-bar {
+  grid-area: header;
+}
+
+#side-panel { 
+  grid-area: side-panel;
+  height: calc(100vh - 2rem);
+}
+
+#content {
+  grid-area: main;
+  align-self: stretch;
+  margin: 20px;
+}
+
+#footer {
+  grid-area: footer;
+}
